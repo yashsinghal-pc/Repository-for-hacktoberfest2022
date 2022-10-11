@@ -1,0 +1,50 @@
+tahi, one
+rua, two
+toru, three
+wha, four
+rima, five
+ono, six
+whitu, seven
+waru, eight
+iwa, nine
+tekau, ten
+kia ora, hello
+haere ra, good bye
+morena, good morning
+ka kite ano, see you later
+haere mai, welcome
+ka pai, good
+kei te pai, well done
+kino, bad
+whanau, family
+iwi, tribe
+tai, friend
+hui, meeting
+karakia, prayer
+waiata, song
+pakipaki, clap
+kai, food
+katao, water
+waka, canoe
+marae, meeting house
+ma, white
+pango, black
+whero, red
+paraone, brown
+karaka, orange
+kowhai, yellow
+kakariki, green
+kahurangi, blue
+poroporo, purple
+rahina, monday
+ratu, tuesday
+raapa, wednesday
+rapare, thursday
+ramere, friday
+rahoroi, saturday
+ratapu, sunday
+aotearoa, new zealand
+motu, island
+hotaka, program
+wahine, woman
+tane, man
