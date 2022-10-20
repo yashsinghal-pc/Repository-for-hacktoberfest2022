@@ -1,36 +1,35 @@
-from turtle import *
-state = {'turn': 0}
-def spinner():
-    clear()
-    angle = state['turn']/10
-    right(angle)
-    forward(100)
-    dot(120, 'red')
-    back(100)
-    right(120)
-    forward(100)
-    dot(120, 'green')
-    back(100)
-    right(120)
-    forward(100)
-    dot(120, 'blue')
-    back(100)
-    right(120)
-    update()
-def animate():
-    if state['turn']>0:
-        state['turn']-=1
+import random
+import operator
 
-    spinner()
-    ontimer(animate, 20)
-def flick():
-    state['turn']+=10
+def random_problem():
+    operators = {
+        '+': operator.add,
+        '-': operator.sub,
+        '*': operator.mul,
+        '/': operator.truediv,
+    }
 
-setup(420, 420, 370, 0)
-hideturtle()
-tracer(False)
-width(20)
-onkey(flick, 'space')
-listen()
-animate()
-done()
+    num_1 = random.randint(1, 10)
+    num_2 = random.randint(1, 10)
+    operation = random.choice(list(operators.keys()))
+    answer = operators.get(operation)(num_1, num_2)
+    print(f'What is {num_1} {operation} {num_2}')
+    return answer
+
+def ask_question():
+    answer = random_problem()
+    guess = float(input('Enter you answer: '))
+    return guess == answer
+
+def game():
+    score = 0
+    while True:
+        if ask_question() == True:
+            score += 1
+            print('Correct !')
+        else:
+            print('Incorrect')
+            break
+    print(f'======== Game Over ========\nYou score is {score}\nKepp going!')
+
+game()
